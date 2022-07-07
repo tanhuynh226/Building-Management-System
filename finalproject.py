@@ -8,7 +8,7 @@ from PCF8574 import PCF8574_GPIO
 from Adafruit_LCD1602 import Adafruit_CharLCD
 
 # Access humidity from CMIS
-API_KEY = "ad646294-dfdf-4888-8bb8-a95abed84e5d"
+API_KEY = "REDACTED"
 today = date.today()
 date = today.strftime("%Y-%m-%d")
 response = requests.get('http://et.water.ca.gov/api/data?appKey=' + API_KEY + '&targets=75&startDate=' + date + '&endDate=' + date + '&dataItems=hly-rel-hum')
